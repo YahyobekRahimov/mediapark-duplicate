@@ -1,7 +1,4 @@
-
-:root {
-  
-}
+@import "./variables";
 
 * {
   padding: 0;
@@ -10,7 +7,7 @@
 }
 
 body {
- 
+  font-family: 'Gilroy', sans-serif;
 }
 
 .container {
@@ -18,4 +15,28 @@ body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: $clr-text-black-900;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: $fs-h2;
+}
+
+h3 {
+  font-size: $fs-h3;
+  font-weight: $fw-bold;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
 }
