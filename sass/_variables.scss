@@ -16,13 +16,14 @@ $clr-text-white-800: #fff;
 
 
 // Colors for backgrounds, svg...
-$clr-bg-black-900: #1D242F;
+$clr-bg-black-900: rgb(29, 36, 47);
 
-$clr-bg-blue-900: #0b2b5e;
+$clr-bg-blue-900: rgb(11, 43, 94);
 
-$clr-bg-red-900: #c62912;
-$clr-bg-red-800: #D92E15;
+$clr-bg-red-900: rgb(198, 41, 18);
+$clr-bg-red-800: rgb(217, 46, 21);
 $clr-bg-red-700: rgba(217,46,21,.06);
+$clr-bg-red-600: rgb(253 245 243);
 
 $clr-bg-gray-900: rgb(108, 113, 120);
 $clr-bg-gray-800:rgb(243, 243, 243);
@@ -31,6 +32,7 @@ $clr-bg-gray-700: rgb(247, 248, 248);
 $clr-bg-white-900: rgb(245, 245, 246);
 $clr-bg-white-800: rgb(255, 255, 255);
 
+$clr-bg-star: #FFA755;
 // Font sizes
 
 $fs-h2: 1.5rem;
@@ -38,6 +40,7 @@ $fs-h3: 2rem;
 
 $fs-36px: 2.25rem;
 $fs-32px: 2rem;
+$fs-20px: 1.25rem;
 $fs-16px: 1rem;
 $fs-14px: 0.875rem;
 $fs-12px: 0.75rem;

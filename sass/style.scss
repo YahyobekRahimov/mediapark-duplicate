@@ -73,11 +73,11 @@
 }
 .fixed-header {
   position: fixed;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   right: 0;
   left: 0;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 14px 0px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   .input-wrapper {
     border-color: #c2bebe !important;
     }
@@ -283,6 +283,260 @@ z-index: 10;
     }
 }
 
+// New-products section
+
+.new-products__container {
+    margin-top: 32px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.block__description {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.product-block-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    .product-block-wrapper__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+        max-width: 215px;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 12px;
+        &:hover {
+            border: 1px solid $clr-bg-gray-800;
+        }
+    }
+}
+
+.price {
+    font-size: $fs-20px;
+    color: $clr-text-black-900;
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.price-per-month {
+    border-radius: 10px;
+    padding: 4px 12px;
+    font-weight: $fw-medium;
+    color: $clr-text-blue-900;
+    border: 1px solid $clr-text-black-900;
+    display: block;
+    margin-bottom: 12px;
+    width: max-content;
+}
+
+.description__name {
+    margin-top: 12px;
+    font-size: $fs-14px;
+    line-height: 1.5em;
+    font-weight: $fw-regular;
+    color: $clr-text-gray-900;
+    margin-bottom: 12px;
+}
+
+.description__stars {
+    color: $clr-bg-star;
+    margin-bottom: 12px;
+    span {
+        font-size: $fs-14px;
+        font-weight: $fw-medium;
+        color: $clr-text-gray-900;
+    }
+}
+
+.description__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    button {
+        padding: 14px;
+        border-radius: 10px;
+    }
+    & > :first-child {
+        background-color: $clr-bg-red-800;
+        color: white;
+        &:hover {
+            background-color: $clr-bg-red-900;
+        }
+    }
+    & > :not(:first-child) {
+        color: $clr-bg-gray-900;
+        background-color: $clr-bg-gray-700;
+        &:hover {
+            background: $clr-bg-gray-800;
+        }
+    }
+}
+
+.product-block-wrapper__block {
+    & > img {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+.new-products__container > button {
+    position: absolute;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,.04);
+    border-radius: 50%;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+    background-color: white;
+}
+
+.new-products__left-arrow {
+    left: -20px;
+    top: 50%;
+}
+.new-products__right-arrow {
+    top: 50%;
+    right: -20px;
+}
+
+// Popular product
+
+.popular-product__container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.popular-product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.popular-product-wrapper__block {
+    max-width: 215px;
+    margin-top: 16px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 10px;
+    & > img {
+        width: 190px;
+        height: 190px;
+    }
+    &:hover {
+        border: 1px solid $clr-bg-gray-800;
+
+    }
+}
+
+.popular__price-per-month {
+    font-size: $fs-12px;
+    font-weight: $fw-semibold;
+    padding: 6px 8px;
+    background-color: $clr-bg-red-600;
+    border-radius: 6px;
+    color: $clr-text-red-800;
+}
+
+.popular-description__buttons {
+    .buttons__add-to-cart {
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 14px;
+        width: 100%;
+        color: $clr-text-white-800;
+        background-color: $clr-bg-red-800;
+        &:hover {
+            background-color: $clr-bg-red-900;
+        }
+    }
+    .buttons__heart {
+        color: $clr-bg-gray-900;
+        font-size: 20px;
+        position: absolute;
+        right: 13px;
+        top: 10px;
+    }
+}
+
+// Laptops section
+
+.laptops__container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.laptops__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.wrapper__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 215px;
+    img {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+.laptops-block-description {
+    .description__stars {
+        text-align: center;
+    }
+    .laptop-description {
+        font-size: $fs-14px;
+        margin-top: 12px;
+        color: $clr-text-gray-900;
+        line-height: 1.5em;
+        text-align: center;
+        min-height: 38px;
+        margin-bottom: 12px;
+    }
+.laptop__price {
+    text-align: center;
+}
+    .laptop__price--bold {
+        font-weight: $fw-bold;
+        font-size: $fs-20px;
+        text-align: center;
+    }
+    .laptop__price--month {
+        margin-top: 12px;
+        padding: 2px;
+        background-color: $clr-bg-gray-700;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-weight: $fw-medium;
+        text-align: center;
+        border-radius: 10px;
+        height: 100%;
+        font-size: $fs-14px;
+        & > :first-child {
+            background-color: $clr-bg-white-800;
+            border-radius: 10px;
+            padding: 7px 25px;
+        }
+        & > :nth-child(2) {
+            min-width: max-content;
+            padding: 5px 25px;
+            font-size: $fs-14px;
+            font-weight: $fw-medium;
+        }
+    }
+}
+
 @media (max-width: 1440px) {
   .container {
     max-width: 1280px;
@@ -361,7 +615,6 @@ z-index: 10;
           font-size: 10px;
         }
     }
-
     .popular-categories__container {
         overflow: hidden;
     }
