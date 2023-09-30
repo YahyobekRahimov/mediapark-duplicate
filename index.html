@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/general.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Document</title>
+
+    <!-- Font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- My styles -->
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Mediapark</title>
 </head>
 
 <body>
@@ -15,32 +23,269 @@
     <!-- Header section -->
 
     <header class="header">
-        <div class="container header__container">
+        <section class="header__section1">
+            <div class="container header__container header__container1">
 
-        </div>
+                <nav>
+                    <ul class="header__contact-info">
+                        <li>
+                            <a href="tel:+998712033333">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+998 71 203 33 33</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Tashkent</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__main-nav">
+                        <li>
+                            <a href="#">
+                                Biz haqimizda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Hamkorlik
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Yuridik shaxslar uchun
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Yetkazib berish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Do'konlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Biz bilan bog'laning!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                O'zbekcha
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+
+        <section class="header__section2">
+            <div class="container header__container header__container2">
+
+                <div class="header__logo">
+                    <button>
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <a href="#">
+                        <span class="logo__text--red">Media<span class="logo__text--blue">Park</span></span>
+                    </a>
+                    <a class="location-on-mobile" href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </div>
+
+                <div class="search-bar">
+                    <button>
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <span>Katalog</span>
+                    </button>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Mediaparkda qidirish">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+                <ul class="user-specific-nav">
+                    <li>
+                        <a href="#">
+                            <img width="24" height="24" src="./images/box-icon.png" alt="box-icon">
+                            <span>Buyurtma holati</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-scale-unbalanced"></i>
+                            <span>Taqqoslash</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Savatcha</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>Saralanganlar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Kirish</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </header>
 
     <!-- Main -->
 
     <main>
-        <section class="">
-            <div class="container">
+        <section class="categories">
+            <div class="container categories__container">
+                <ul class="categories__list">
+                    <li>
+                        <a class="discounts" href="#">
+                            Aksiyalar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Smartfonlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Muzlatgichlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Apple
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Televizorlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Noutbuklar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Kir yuvish mashinalari
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Qavha mashinalari
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pishirish panellari
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Smart soatlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Konditsionerlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Dazmollar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Blenderlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Barcha tovarlar
+                        </a>
+                    </li>
 
+                </ul>
             </div>
         </section>
 
-        <section class="">
-            <div class="container">
+        <!-- Carousel (slider) section -->
 
+        <section class="carousel">
+            <div class="container carousel__container">
+                <div class="carousel">
+                    <img class="carousel-img" src="./images/iphone-15pro-soon-2.jpg" alt="Image 1">
+                    <img class="carousel-img" src="./images/polaris-multivarka-bonus.jpg" alt="Image 2">
+                    <img class="carousel-img" src="./images/samsung-appliances-oven.jpg" alt="Image 3">
+                </div>
+                <button class="prev-button"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next-button"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </section>
+
+        <!-- Popular categories section -->
+
+        <section class="popular-categories">
+            <h2>Ommabop kategoriyalar</h2>
+            <a href="#">
+                <div class="popular-categories__icon-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 16V7.2C3 6.07989 3 5.51984 3.21799 5.09202C3.40973 4.71569 3.71569 4.40973 4.09202 4.21799C4.51984 4 5.0799 4 6.2 4H17.8C18.9201 4 19.4802 4 19.908 4.21799C20.2843 4.40973 20.5903 4.71569 20.782 5.09202C21 5.51984 21 6.0799 21 7.2V16H15.6627C15.4182 16 15.2959 16 15.1808 16.0276C15.0787 16.0521 14.9812 16.0925 14.8917 16.1474C14.7908 16.2092 14.7043 16.2957 14.5314 16.4686L14.4686 16.5314C14.2957 16.7043 14.2092 16.7908 14.1083 16.8526C14.0188 16.9075 13.9213 16.9479 13.8192 16.9724C13.7041 17 13.5818 17 13.3373 17H10.6627C10.4182 17 10.2959 17 10.1808 16.9724C10.0787 16.9479 9.98119 16.9075 9.89172 16.8526C9.7908 16.7908 9.70432 16.7043 9.53137 16.5314L9.46863 16.4686C9.29568 16.2957 9.2092 16.2092 9.10828 16.1474C9.01881 16.0925 8.92127 16.0521 8.81923 16.0276C8.70414 16 8.58185 16 8.33726 16H3ZM3 16C2.44772 16 2 16.4477 2 17V17.3333C2 17.9533 2 18.2633 2.06815 18.5176C2.25308 19.2078 2.79218 19.7469 3.48236 19.9319C3.7367 20 4.04669 20 4.66667 20H19.3333C19.9533 20 20.2633 20 20.5176 19.9319C21.2078 19.7469 21.7469 19.2078 21.9319 18.5176C22 18.2633 22 17.9533 22 17.3333C22 17.0233 22 16.8683 21.9659 16.7412C21.8735 16.3961 21.6039 16.1265 21.2588 16.0341C21.1317 16 20.9767 16 20.6667 16H20"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <span>Barcha noutbuklar</span>
+            </a>
+            <a href="#">
+                <div class="popular-categories__icon-wrapper">
+                    
+                </div>
+            </a>
+            <a href="#">
+
+            </a>
+            <a href="#">
+
+            </a>
+            <a href="#">
+
+            </a>
+            <a href="#">
+
+            </a>
+            <a href="#">
+
+            </a>
+        </section>
+
     </main>
 
     <footer>
         <div class="container footer__container">
-            
+
         </div>
     </footer>
+    <!-- Javascript -->
+    <script src="./js/fixed-header.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>
