@@ -597,8 +597,8 @@ z-index: 10;
 
 .popular-brands-wrapper {
     display: grid;
-    gap: 10px;
     grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
     margin-top: 16px;
     &__block {
         border-radius: 20px;
@@ -678,6 +678,7 @@ z-index: 10;
 
 .cta__container {
     padding: 45px 15px;
+    position: relative;
     h3 {
         font-size: $fs-32px;
         font-weight: $fw-bold;
@@ -697,6 +698,11 @@ z-index: 10;
     gap: 15px;
 }
 
+.cta picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 // Footer section
 
 .footer {
@@ -762,6 +768,7 @@ z-index: 10;
 .footer__ready-to-answer {
     margin-top: 32px;
     margin-bottom: 10px;
+    max-width: max-content;
 }
 
 .footer__working-time {
@@ -792,7 +799,25 @@ z-index: 10;
     }
 }
 
+.copyright {
+    background-color:rgb(34, 44, 58);
+}
 
+.copyright__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    .copyright__social-links {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        img {
+            width: 25px;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(114deg) brightness(107%) contrast(101%);
+        }
+    }
+}
 @media (max-width: 1440px) {
   .container {
     max-width: 1280px;
@@ -819,6 +844,98 @@ z-index: 10;
             display: none;
         }
     }
+    .product-block-wrapper {
+        grid-template-columns: repeat(4, 1fr); 
+        & > :nth-last-child(1),
+        & > :nth-last-child(2) {
+            display: none;
+        }
+    }
+    .popular-categories-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        & > :nth-last-child(1),
+        & > :nth-last-child(2) {
+            display: none;
+        }
+    }
+
+    .product-block-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        & > :nth-last-child(1),
+        & > :nth-last-child(2) {
+            display: none;
+        }
+    }
+    .popular-product-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        & > :nth-last-child(1),
+        & > :nth-last-child(2) {
+            display: none;
+        }
+    }
+    .laptops__wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        & > :nth-last-child(1),
+        & > :nth-last-child(2) {
+            display: none;
+        }
+    }
+    .popular-brands-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        & > :nth-last-child(1),
+        & > :nth-last-child(2) {
+            display: none;
+        }
+    }
+    .why-us__block-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        & > :nth-last-child(1),
+        & > :nth-last-child(2) {
+            display: none;
+        }
+    }
+    .new-products__left-arrow {
+        left: 0;
+    } 
+    .new-products__right-arrow {
+        right: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .product-block-wrapper {
+        grid-template-columns: repeat(3, 1fr); 
+        & > :nth-last-child(3) {
+            display: none;
+        }
+    }
+    .popular-categories-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        & > :nth-last-child(3) {
+            display: none;
+        }
+    }
+
+    .product-block-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        & > :nth-last-child(3) {
+            display: none;
+        }
+    }
+    .popular-product-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        & > :nth-last-child(3) {
+            display: none;
+        }
+    }
+    .laptops__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        & > :nth-last-child(3) {
+            display: none;
+        }
+    }
 }
 @media (max-width: 1024px) {
   .header__section1 {
@@ -838,6 +955,8 @@ z-index: 10;
   }
   .header__container2 {
     flex-direction: column;
+    justify-content: start;
+    gap: 10px;
   }
   .header__logo {
     display: flex;
