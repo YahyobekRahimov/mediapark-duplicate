@@ -818,6 +818,41 @@ z-index: 10;
         }
     }
 }
+
+// Mobile nav section 
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $clr-text-gray-900;
+        gap: 5px;
+        cursor: pointer;
+        &:hover {
+            color: $clr-bg-blue-900;
+            i {
+                color: $clr-text-red-800;
+            }
+
+        }
+    }
+
+}
 @media (max-width: 1440px) {
   .container {
     max-width: 1280px;
@@ -938,14 +973,20 @@ z-index: 10;
     }
 }
 @media (max-width: 1024px) {
-  .header__section1 {
+    .header__section1 {
+        display: none;
+    }
+    .search-bar > button {
+        display: none;
+    }
+    .user-specific-nav {
     display: none;
+}
+.mobile-nav {
+    display: block;
   }
-  .search-bar > button {
-    display: none;
-  }
-  .user-specific-nav {
-    display: none;
+  .footer {
+      display: none;
   }
   .header__logo {
     button,
@@ -954,26 +995,26 @@ z-index: 10;
     }
   }
   .header__container2 {
-    flex-direction: column;
+      flex-direction: column;
     justify-content: start;
     gap: 10px;
-  }
-  .header__logo {
+}
+.header__logo {
     display: flex;
     width: 100%;
     justify-content: space-between;
     span {
-      font-size: 26px;
+        font-size: 26px;
     }
-  }
-  .prev-button,
-  .next-button {
+}
+.prev-button,
+.next-button {
     width: 30px;
     i {
         font-size: 12px;
     }
-  }
-  .popular-categories-wrapper {
+}
+.popular-categories-wrapper {
     grid-template-columns: repeat(4, 1fr);;
     & > :nth-last-child(2) {
         display: none;
@@ -981,20 +1022,72 @@ z-index: 10;
 }
 }
 @media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        overflow: hidden;
+    }
     .prev-button,
     .next-button {
-      width: 25px;
-      height: 25px;
+        width: 25px;
+        height: 25px;
       padding: 0;
       i {
           font-size: 10px;
+        }
+    }
+    .product-block-wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+        & > :nth-last-child(3) {
+            display: none;
+        }
+        &__block {
+            min-width: 200px;
+        }
+    }
+    .popular-categories-wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        & > :nth-last-child(3) {
+            display: none;
+        }
+        &__block {
+            min-width: 200px;
+        }
+    }
+    
+    .product-block-wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        & > :nth-last-child(3) {
+            display: none;
+        }
+        &__block {
+            min-width: 200px;
+        }
+    }
+    .popular-product-wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        & > :nth-last-child(3) {
+            display: none;
+        }
+        &__block {
+            min-width: 200px;
+        }
+    }
+    .laptops__wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        & > :nth-last-child(3) {
+            display: none;
+        }
+        &__block {
+            min-width: 200px;
         }
     }
     .popular-categories__container {
         overflow: hidden;
     }
     .popular-categories-wrapper {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
         & > :nth-last-child(3) {
             display: none;
         }
@@ -1005,14 +1098,41 @@ z-index: 10;
             width: 20px;
             height: 20px;
         }
+        &__block {
+            min-width: 200px;
+        }
+    }
+    .popular-brands-wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        &__block {
+            min-width: 200px;
+        }
+        & > :nth-last-child(3) {
+            display: none;
+        }    
+    }
+    .why-us__block-wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        &__block {
+            min-width: 200px;
+        }
+        & > :nth-last-child(3) {
+            display: none;
+        }
+    }
+    .cta {
+        display: none;
     }
     h2 {
-        }
+    }
     h3 {
     }
 }
 
 @media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 450px) {
